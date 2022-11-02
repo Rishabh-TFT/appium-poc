@@ -5,15 +5,15 @@ Technology stack: [Python](https://www.python.org/), [appium](https://appium.io/
 [PyTest](https://docs.pytest.org/en/stable/), [PyTest BDD](https://pypi.org/project/pytest-bdd/)
 
 ### Directory structure
-├── assets                                              # local folder contained credentials
-├── feature_files                                       # folder contains Gherkin scenarios 
-├── files                                               # folder contains android apk files 
-├── locators                                            # folder contains locators    
-├── screens                                             # folder contains functions to be used in the test steps   
-├── test_data                                           # folder contains test data urls, titles, message and sample user email accounts
-├── tests                                               # folder contains Gherkin steps for scenarios
-├── web_driver                                          # folder contains webdriver and appium configurations 
-├── conftest.py                                         # the file contains code related to Slack reports
+├── assets                                              # local folder contained credentials    
+├── feature_files                                       # folder contains Gherkin scenarios     
+├── files                                               # folder contains android apk files  
+├── locators                                            # folder contains locators      
+├── screens                                             # folder contains functions to be used in the test steps       
+├── test_data                                           # folder contains test data urls, titles, message and sample user email accounts   
+├── tests                                               # folder contains Gherkin steps for scenarios   
+├── web_driver                                          # folder contains webdriver and appium configurations    
+├── conftest.py                                         # the file contains code related to Slack reports   
 ├── requirements.txt                                    # pip requirements file
 
 
@@ -28,3 +28,9 @@ python3.10 -m venv venv
 example: C:\Users\Username\venv\Scripts\activate.bat
 pip install pip-tools
 pip install -r requirements.txt
+```
+How to execute Test Suite?
+- Run Below command after activating VENV and stating Appium Server
+``` bash
+pytest test_local_run.py
+```
