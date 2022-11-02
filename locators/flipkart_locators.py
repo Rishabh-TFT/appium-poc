@@ -1,3 +1,5 @@
+from appium.webdriver.common.appiumby import AppiumBy
+
 SELECT_LANGUAGE = (AppiumBy.XPATH,  "//android.widget.TextView[@text='English']")
 CONTINUE_BTN = (AppiumBy.XPATH,  "//android.widget.Button[@text='CONTINUE']")
 CLOSE_BTN = (AppiumBy.ID, "custom_back_icon")
