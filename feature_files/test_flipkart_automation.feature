@@ -2,7 +2,8 @@ Feature: Automation Test for flipkart
 
 
 
-  Scenario: Verify search functionality
-		When I open flipkart and search for a device
-		Then I select device and click on add to cart option
-		Then I go to my my cart and verify the added device
+  Scenario: Verify Add to cart flow
+	  Given I select English Language
+	  When I search products
+	  Then I select a product
+	  Then I verify product added to cart
